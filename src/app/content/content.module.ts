@@ -12,9 +12,9 @@ import { TestimonialComponentComponent } from './service-component/component/tes
 import { AboutComponentComponent } from './about-us-component/component/about-component/about-component.component';
 import { TeamMembersComponentComponent } from './about-us-component/component/team-members-component/team-members-component.component';
 import { ContactComponentComponent } from './contact-component/contact-component.component';
-import { BlogComponentComponent } from './blog-component/blog-component.component';
 import { BlogGridComponenComponent } from './blog-component/blog-grid-componen/blog-grid-componen.component';
 import { BlogDetailComponentComponent } from './blog-component/blog-detail-component/blog-detail-component.component';
+import { FreeQuoteComponentComponent } from './free-quote-component/free-quote-component.component';
 
 const route: Routes = [
   {
@@ -39,6 +39,18 @@ const route: Routes = [
     component: ContactComponentComponent,
   },
   {
+    path: "blog-detail-component",
+    component: BlogDetailComponentComponent,
+  },
+  {
+    path: "block-grid-component",
+    component: BlogGridComponenComponent,
+  },
+  {
+    path: "free-quote-component",
+    component: FreeQuoteComponentComponent,
+  },
+  {
     path: "**",
     component: NotfoundComponent
   }
@@ -54,9 +66,9 @@ const route: Routes = [
     AboutComponentComponent,
     TeamMembersComponentComponent,
     ContactComponentComponent,
-    BlogComponentComponent,
     BlogGridComponenComponent,
-    BlogDetailComponentComponent
+    BlogDetailComponentComponent,
+    FreeQuoteComponentComponent
   ],
   imports: [
     CommonModule,
