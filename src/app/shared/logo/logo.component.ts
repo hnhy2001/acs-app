@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'logo-component',
+  templateUrl: './logo.component.html',
+  styleUrls: ['./logo.component.scss']
 })
-export class HomeComponent implements OnInit {
-  personOption:OwlOptions ={
+export class LogoComponent implements OnInit {
+  customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
@@ -24,16 +24,14 @@ export class HomeComponent implements OnInit {
         items: 2
       },
       740: {
-        items: 2
+        items: 4
       },
       940: {
-        items: 3
+        items: 6
       }
     },
-    nav: true
-  
+    nav: false
   }
- 
   constructor() { }
 
   ngOnInit(): void {

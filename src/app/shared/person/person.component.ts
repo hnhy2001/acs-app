@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'person-component',
+  templateUrl: './person.component.html',
+  styleUrls: ['./person.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class PersonComponent implements OnInit {
   personOption:OwlOptions ={
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: false,
+    dots: true,
     navSpeed: 200,
     autoplay: true,
     autoplayTimeout:4000,
@@ -30,10 +30,9 @@ export class HomeComponent implements OnInit {
         items: 3
       }
     },
-    nav: true
+    nav: false
   
   }
- 
   constructor() { }
 
   ngOnInit(): void {
