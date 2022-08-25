@@ -10,6 +10,7 @@ import { FooterComponentComponent } from './layout/footer-component/footer-compo
 import { NotfoundComponent } from './layout/notfound/notfound.component';
 
 
+
 const routes: Routes = []
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ const routes: Routes = []
     HeaderComponentComponent,
     FooterComponentComponent,
     NotfoundComponent,
+    
   ],
   imports: [
     BrowserModule,
