@@ -27,7 +27,7 @@ export class LogoComponent implements OnInit {
         items: 4
       },
       940: {
-        items: 6
+        items: 5
       }
     },
     nav: false
