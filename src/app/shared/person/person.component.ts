@@ -24,10 +24,10 @@ export class PersonComponent implements OnInit {
         items: 2
       },
       740: {
-        items: 2
+        items: 3
       },
       940: {
-        items: 3
+        items: 4
       }
     },
     nav: false
