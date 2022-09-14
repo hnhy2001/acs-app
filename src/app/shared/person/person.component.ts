@@ -6,32 +6,27 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./person.component.scss']
 })
 export class PersonComponent implements OnInit {
-  personOption:OwlOptions ={
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: true,
-    navSpeed: 200,
+  personOption: OwlOptions = {
     autoplay: true,
-    autoplayTimeout:4000,
-    navText: ['', ''],
+    smartSpeed: 1500,
+    dots: true,
+    loop: true,
+    center: true,
     responsive: {
       0: {
         items: 1
       },
-      400: {
+      576: {
+        items: 1
+      },
+      768: {
         items: 2
       },
-      740: {
+      992: {
         items: 3
-      },
-      940: {
-        items: 4
       }
     },
-    nav: false
-  
+
   }
   constructor() { }
 
