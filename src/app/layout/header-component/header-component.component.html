@@ -31,9 +31,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="home" class="nav-item nav-link active">Home</a>
-                    <a href="about" class="nav-item nav-link">About</a>
-                    <a href="services" class="nav-item nav-link">Services</a>
+                    <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Home</a>
+                    <a routerLink="/about" class="nav-item nav-link" routerLinkActive="active">About</a>
+                    <a routerLink="/services" class="nav-item nav-link" routerLinkActive="active">Services</a>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                         <div class="dropdown-menu m-0">
@@ -51,7 +51,8 @@
                             <a href="quote" class="dropdown-item">Free Quote</a>
                         </div>
                     </div> -->
-                    <a href="contact" class="nav-item nav-link">Contact</a>
+                
+                <a routerLink="contact" class="nav-item nav-link" routerLinkActive="active">Contact</a>
                 </div>
                 <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
             </div>
