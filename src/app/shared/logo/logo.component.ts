@@ -8,29 +8,24 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class LogoComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
+    margin: 45,
     dots: false,
-    navSpeed: 200,
     autoplay: true,
-    autoplayTimeout:4000,
-    navText: ['', ''],
+    smartSpeed: 1000,
     responsive: {
       0: {
-        items: 1
-      },
-      400: {
         items: 2
       },
-      740: {
+      576: {
         items: 4
       },
-      940: {
-        items: 5
+      768: {
+        items: 6
+      },
+      992: {
+        items: 8
       }
     },
-    nav: false
   }
   constructor() { }
 
